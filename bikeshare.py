@@ -17,8 +17,10 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     city = input('ENTER THE CITY: ')
+    #Sensitive code: must use lower() built in function
+
     while city not in ['chicago', 'new york city', 'washington']:
-	#sensitive code: must use lower() built in function
+	 #Sensitive code: must use lower() built in function
         city = input ("CHOOSE BETWEEN chicago, new york city OR washington: ")
 
 
@@ -30,7 +32,7 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('ENTER DAY : ')
-
+     #Sensitive code: must use lower() built in function
     print('-'*40)
     return city, month, day
 
