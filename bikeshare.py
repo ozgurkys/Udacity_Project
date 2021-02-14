@@ -20,16 +20,16 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). 
     city = input('ENTER THE CITY: ')
     while city not in ['chicago', 'new york city', 'washington']:
-        city = input ("CHOOSE BETWEEN chicago, new york city OR washington: ").lower()
+        city = input ("CHOOSE BETWEEN chicago, new york city OR washington: ")
 
 
     # get user input for month (all, january, february, ... , june)
     month = input('ENTER MONTH: ').lower()
     while month not in ['all','january', 'february', 'march', 'april', 'may', 'june']:
-        month = input('ENTER MONTH january, february, ... , june : ').lower()
+        month = input('ENTER MONTH january, february, ... , june : ')
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day = input('ENTER DAY : ').lower()
+    day = input('ENTER DAY : ')
 
     print('-'*40)
     return city, month, day
