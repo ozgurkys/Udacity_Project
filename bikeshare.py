@@ -19,15 +19,19 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). 
     city = input('ENTER THE CITY: ')
     while city not in ['chicago', 'new york city', 'washington']:
+	#sensitive code: must use lower() built in function
         city = input ("CHOOSE BETWEEN chicago, new york city OR washington: ").lower()
 
 
     # get user input for month (all, january, february, ... , june)
+    #sensitive code: must use lower() built in function
     month = input('ENTER MONTH: ').lower()
     while month not in ['all','january', 'february', 'march', 'april', 'may', 'june']:
+	
         month = input('ENTER MONTH january, february, ... , june : ').lower()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
+        #sensitive code: must use lower() built in function
     day = input('ENTER DAY : ').lower()
 
     print('-'*40)
